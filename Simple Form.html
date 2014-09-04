@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style type="text/css">
+        div{
+            background-color: #EEEEEE;
+            display: inline-block;
+            width: 660px;
+        }
+        div.boxes{
+            background-color: #234465;
+            width: 320px;
+            float: left;
+            height: 260px;
+            margin-bottom: 10px;
+        }
+        #box-1{
+            background-color: #EEEEEE;
+            margin-left: 10px;
+        }
+        .text-fields{
+            width: 290px;
+            margin-left: 15px;
+            margin-right: 15px;
+            height: 25px;
+            margin-top: 10px;
+        }
+        #remember-me-checkbox {
+            margin-left: 15px;
+            color: #EEEEEE;
+        }
+        #remember-me{
+                color: #EEEEEE;
+            }
+        #register{
+            float: right;
+            margin-right: 11px;
+            margin-top: 10px;
+            border: 2px solid #234465;
+            background-color: #EEEEEE;
+            width: 120px;
+            height: 30px;
+            color: #234465;
+            font-family: consolas;
+            font-size: 15px;
+        }
+        #register:hover{
+            background-color: #234465;
+            color: #EEEEEE;
+        }
+        #forgot{
+            color: #EEEEEE;
+            float: right;
+            margin-right: 12px;
+            margin-top: 10px;
+            font-size: 12px;;
+        }
+        #login {
+            border: 2px solid #E3910D;
+            float: right;
+            margin-right: 11px;
+            width: 130px;
+            height: 30px;
+            margin-top: 5px;
+            background-color: #234465;
+            color: #EEEEEE;
+            font-family: consolas;
+            font-size: 15px;
+        }
+        #login:hover{
+            background-color: #E3910D;
+        }
+
+        #box-1-header{
+            font-family: arial;
+            color: gray;
+        }
+        #registerInHeader{
+            color: #234465;
+        }
+        #box-2-header{
+            font-family: arial;
+            color: #EEEEEE;
+        }
+        h1{
+            color: #234465;
+            font-family: arial;
+            padding-left: 15px;
+        }
+        #info{
+            color: gray;
+            font-family: arial;
+            font-size: 14px;
+            padding-left: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Enter the system</h1>
+        <p id="info">It is necessary to log in your account in order to sign for a course.</p>
+        <br/>
+            <div class="boxes" id="box-1">
+                <h4 id="box-1-header" class="text-fields"><strong>ARE YOU NEW? <strong id="registerInHeader">REGISTER</strong></strong></h4>
+                <form>
+                    <input type="text" name="username" id="username" placeholder="User name" class="text-fields">
+                    <input type="email" name="email" id="email" placeholder="Email" class="text-fields">
+                    <input type="password" name="password" id="password" placeholder="Password" class="text-fields">
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" class="text-fields">
+                    <br/>
+                    <input type="submit" id="register" value="Register">
+                </form>
+            </div>
+            <div class="boxes" id="box-2">
+                <h4 id="box-2-header" class="text-fields"><strong>ALREADY A STUDENT? LOGIN</strong></h4>
+                <form>
+                    <input type="text" name="user" id="user" placeholder="User name" class="text-fields">
+                    <input type="password" name="pass" id="pass" placeholder="Password" class="text-fields">
+                    <br/>
+                    <input type="checkbox" id="remember-me-checkbox">
+                    <label for="remember-me-checkbox" id="remember-me">Remember me?</label>
+                    <input type="submit" id="login" value="Login">
+                    <p><a href="http://softuni.bg"  id="forgot">Forgot Password</a> </p>
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>

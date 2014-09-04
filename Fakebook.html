@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fakebook</title>
+    <style>
+        div{
+            background-color: #3B5997;
+            width: 753px;
+        }
+        h1{
+            font-family: arial;
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            margin: 0px;
+
+        }
+        em{
+            font-size: 15px;
+
+        }
+        h2{
+            font-family: arial;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            margin: 0px;
+        }
+        p{
+            font-family: arial;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        #fieldset-1{
+            width: 260px;
+            height: 200px;
+            position: relative;
+            float: left;
+            margin-left: 14px;
+            border-radius: 8px;
+        }
+        #fieldset-2 {
+            width: 392px;
+            height: 200px;
+            position: relative;
+            float: left;
+            margin-left: 14px;
+            border-radius: 8px;
+        }
+        legend{
+            text-align: center;
+            font-family: arial;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .textbox{
+            width: 120px;
+            border-radius: 4px;
+            padding: 2px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .labeltext{
+            color: white;
+            margin-right: 5px;
+            font-weight: bold;
+            font-family: arial;
+            font-size: 9pt;
+        }
+        #birthday{
+            margin: 0px;
+        }
+        label{
+            color: white;
+        }
+        .nums{
+            width: 59px;
+            border-radius: 4px;
+            padding: 2px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+        .textbox-select{
+            width: 128px;
+            border-radius: 4px;
+            padding: 2px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-size: 9pt;
+        }
+        textarea{
+            width: 386px;
+            height: 55px;
+            border-radius: 3px;
+        }
+        #resetbtn{
+            width: 287px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 15px;
+            margin-right: 14px;
+            font-weight: bold;
+            color: #3B5997;
+        }
+        #regbtn{
+            width: 419px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0px;
+            font-weight: bold;
+            color: #3B5997;
+        }
+        #resetbtn:hover{
+            background-color: #3B5997;
+            color: #DDDDDD;
+        }
+        #regbtn:hover{
+            background-color: #3B5997;
+            color: #DDDDDD;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>fakebook<em>&reg;</em></h1>
+        <h2>Registration</h2>
+        <p>Its is safe and it will always be!</p>
+        <form>
+        <fieldset id="fieldset-1">
+            <legend>None-Important Informaton</legend>
+
+                    <input type="text" class="textbox" name="firstname" id="username" placeholder="First Name">
+                    <input type="text" class="textbox" name="lastname" id="lastname" placeholder="Last Name">
+                    <input type="email" class="textbox" name="email" id="email" placeholder="Your Email">
+                    <input type="tel" class="textbox" name="phone" id="phone" placeholder="Phone number">
+                    <input type="password" class="textbox" name="pass" id="pass" placeholder="Your Password">
+                    <input type="url" class="textbox" name="website" id="website" placeholder="Website">
+                    <label for="birthday" class="labeltext">Birthday</label>
+                    <br>
+                    <input type="datetime-local" name="birthday" id="birthday" value="2014-09-05T01:58">
+                    <br>
+                    <input type="radio" name="gender" id="genderFemale" value="female">
+                    <label for="genderFemale" class="labeltext">Female</label>
+                    <input type="radio" name="gender" id="genderMale" value="male">
+                    <label for="genderMale" class="labeltext">Male</label>
+                    <input type="radio" name="gender" id="genderOther" value="other" checked="checked">
+                    <label for="genderOther" class="labeltext">Other</label>
+
+        </fieldset>
+        <fieldset id="fieldset-2">
+            <legend>Important Information *required</legend>
+
+                    <select name="country" required="required" class="textbox-select">
+                        <option>Country</option>
+                        <option>Bulgaria</option>
+                        <option>England</option>
+                        <option>Croatia</option>
+                        <option>Italy</option>
+                    </select>
+                    <input type="text" class="textbox" name="village" placeholder="Village" id="village" required="required">
+                    <input type="text" class="textbox" name="district" placeholder="District" id="district" required="required">
+                    <input type="text" class="textbox" name="street" placeholder="Street" id="str" required="required">
+                    <input type="text"  class="nums" name="number" placeholder="Nr" id="nr" required="required">
+                    <input type="text" class="nums" name="floor" placeholder="Floor" id="floor" required="required">
+                    <input type="text" class="nums" name="ap-num" placeholder="Ap Nr" id="ap-nr" required="required">
+                    <input type="color" class="textbox" name="door-color" value="#FF2AAA" required="required">
+                    <input type="text" class="textbox" name="waterN" placeholder="Water meter Nr" id="w-mr-nr" required="required">
+                    <select name="panties-size" class="textbox-select">
+                        <option>Aunt Panties' Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <label for="textarea" class="labeltext">More Personal Information</label>
+                    <textarea name="more-info" id="textarea" placeholder="Give us more information!!!"></textarea>
+
+        </fieldset>
+            <br/>
+            <input type="reset" value="Clear Form" id="resetbtn">
+            <input type="submit" value="Register" id="regbtn">
+        </form>
+    </div>
+
+</body>
+</html>

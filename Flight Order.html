@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flight Order</title>
+    <style>
+        #container{
+            background-color: #FFC0CB;
+            width: 400px;
+            display: inline-block;
+        }
+        .block{
+            width: 190px;
+            float: left;
+            height: 240px;
+            margin-left: 6.5px;
+            margin-bottom: 6.5px;
+        }
+        .text{
+            font-style: italic;
+            font-size: 14px;
+            margin-left: 6px;
+            font-family: arial;
+        }
+        .city{
+            width: 180px;
+            margin-left: 5px;
+            font-weight: bold;
+            height: 25px;
+        }
+        .date{
+            width: 175px;
+            margin-left: 5px;
+        }
+        .time {
+            width: 80px;
+            margin-left: 5px;
+        }
+        .ticket-selection{
+            width: 50px;
+            margin-left: 5px;
+        }
+        #label-12{
+            font-style: italic;
+            font-size: 14px;
+            font-family: arial;
+            margin-left: 5px;
+        }
+        #label-2-12{
+            margin-left: 36px;
+            font-style: italic;
+            font-size: 14px;
+            font-family: arial;
+        }
+        #label-0-2{
+            margin-left: 30px;
+            font-style: italic;
+            font-size: 14px;
+            font-family: arial;
+        }
+        #ticket-class{
+            width: 180px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        #search-btn{
+            width: 180px;
+            margin-left: 5px;
+            height: 30px;
+            margin-top: 2px;
+        }
+        #prefer-directs-style{
+            font-family: arial;
+            font-style: italic;
+            font-size: 9px;
+        }
+        #prefer-directs{
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+        h1{
+            font-family: arial;
+            text-align: center;
+            font-style: italic;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>FLIGHT ORDER</h1>
+        <div class="block">
+            <form>
+                <label for="from" class="text">From</label>
+                <select id="from" class="city">
+                    <option selected="selected">enter a city</option>
+                    <option>Sofia</option>
+                    <option>Burgas</option>
+                </select>
+                <br/>
+                <br/>
+                <label for="departure-date" class="text">Departure Date</label><br>
+                <input type="date" id="departure-date" value="2014-06-09" class="date">
+                <label for="return-date" class="text">Return Date</label><br>
+                <input type="date" id="return-date" value="2014-06-13" class="date">
+                <label for="12+" id="label-12">12+</label>
+                <label for="2-12" id="label-2-12">2-12</label>
+                <label for="0-2" id="label-0-2">0-2</label><br>
+                <input type="number" id="12+" class="ticket-selection">
+                <input type="number" id="2-12" class="ticket-selection">
+                <input type="number" id="0-2" class="ticket-selection">
+            </form>
+        </div>
+        <div class="block">
+            <form>
+                <label for="to" class="text">To</label>
+                <select id="to" class="city">
+                    <option selected="selected">enter a city</option>
+                    <option>Paris</option>
+                    <option>London</option>
+                    <option>Frankfurt</option>
+                </select>
+                <input type="checkbox" id="prefer-directs">
+                <label for="prefer-directs" id="prefer-directs-style">Prefer directs</label>
+                <br/>
+                <label for="time-interval-from-1" class="text">Time Interval</label><br>
+                <input type="time" id="time-interval-from-1" value="00:20" class="time">
+                <input type="time" id="time-interval-to-1" value="05:00" class="time">
+                <label for="time-interval-from-2" class="text">Time Interval</label><br>
+                <input type="time" id="time-interval-from-2" value="16:00" class="time">
+                <input type="time" id="time-interval-to-2" value="22:00" class="time">
+                <label for="ticket-class" class="text">Choose class</label><br>
+                <select id="ticket-class">
+                    <option selected="selected">Economy</option>
+                    <option>Business</option>
+                </select>
+                <br>
+                <input type="submit" value="Search" id="search-btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
